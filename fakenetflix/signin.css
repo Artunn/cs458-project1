@@ -1,16 +1,4 @@
-body{
-    background-image: url(fakeflix_bg.jpg);
-    color: white;
-    font-family: sans-serif;
-}
 
-.header{
-    font-size: 48px;
-    font-weight: 600;
-    color: red;
-    text-shadow: rgba(0, 0, 0, 0.5);
-    padding: 1rem;
-}
 
 .signin-container{
     display: flex;
@@ -21,10 +9,12 @@ body{
 }
 
 .inner-signin-box{
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 1rem 3rem 5rem 3rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 2rem 3rem 5rem 3rem;
     border-radius: 30px;
     color: white;
+    width: 25rem;
+    height: 20rem;
 }
 
 .signin-text{
@@ -33,22 +23,6 @@ body{
     margin-bottom: 28px;
 }
 
-input{
-    padding: 7px;
-    background-color: rgb(56, 56, 56) ;
-    border-radius: 4px;
-    border-style: none;
-    width: 90%;
-    color: white;
-}
-
-.red-button{
-    background-color: red;
-    width: 95%;
-    margin: auto;
-    text-align: center;
-    color: white;
-}
 
 .signin-checkbox{
     width: 100px;

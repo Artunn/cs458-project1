@@ -1,0 +1,30 @@
+.index-container{
+    width: 60%;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.red-button{
+    width: 5rem;
+    margin: 0 2rem 0 0;
+}
+
+.index-container{
+    margin: auto;
+    width: 60%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 2rem 3rem 5rem 3rem;
+    border-radius: 30px;
+}
+
+.getstarted-wrapper{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
