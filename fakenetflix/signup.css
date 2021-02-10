@@ -24,6 +24,14 @@ header{
     margin: 1rem;
 }
 
+.white-button{
+    background-color: whitesmoke;
+    color: black;
+    width: 80%;
+    min-width: 100px;
+    margin: 1rem;
+}
+
 input{
     color: black;
     background-color: whitesmoke;
@@ -41,6 +49,7 @@ input{
     white-space: nowrap;
     font-size: 12px;
     margin-bottom: 3rem;
+    margin-left: 2rem;
 }
 
 td{
