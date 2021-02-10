@@ -9,6 +9,7 @@ body{
     font-weight: 600;
     color: red;
     text-shadow: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
 }
 
 .signin-container{
