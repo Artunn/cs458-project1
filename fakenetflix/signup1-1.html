@@ -10,7 +10,8 @@
 </head>
 
 <body>
-  <script src="js/scripts.js"></script>
+  <script src="js/fakeBackend.js"></script>
+  <script src="js/signup1-1.js"></script>
   <header class="header">
     <div>Fakeflix</div>
     <div><a href="signin.html"><input type="submit" value="Sign in" class="red-button"></a></div>
@@ -21,14 +22,18 @@
       <p>Create a password to start your membership.</p>
       <p>Just a few more steps and you're done!<br>We hate paperwork, too.</p>
 
-      <input type="text" id="signup-name" placeholder="Email"><br><br>
-      <input type="text" id="signup-password" placeholder="Add a Password"><br><br>
+      <form id="submitForm">
+        <input type="email" id="signup-mail" placeholder="Email" required><br><br>
+        <input type="password" id="signup-password" minlength=4 maxlength=16 placeholder="Add a Password" required>
+        <button type="button" id="hideShow">SHOW</button>
+        <br><br>
 
-      <div class="signup-checkbox">
-        <input type="checkbox" id="sendoffers" value="">
-        <label for="sendoffers"> Please do not me email me fakeflix special offers</label>
-      </div>
-      <input type="submit" value="Continue" class="red-button"><br><br>
+        <div class="signup-checkbox">
+          <input type="checkbox" id="sendoffers" value="">
+          <label for="sendoffers"> Please do not me email me fakeflix special offers</label>
+        </div>
+        <input type="submit" value="Continue" class="red-button"><br><br>
+      </form>
     </div>
 </body>
 

@@ -10,7 +10,8 @@
 </head>
 
 <body>
-  <script src="js/scripts.js"></script>
+  <script src="js/fakeBackend.js"></script>
+  <script src="js/signup3-1.js"></script>
   <header class="header">
     <div>Fakeflix</div>
     <div><a href="signin.html"><input type="submit" value="Sign in" class="red-button"></a></div>
@@ -20,17 +21,21 @@
       <p>STEP 3 OF 3</p>
       <p>Set up your credit or debit card.</p>
 
-      <input type="text" id="creditcard-firstname" placeholder="First Name"><br><br>
-      <input type="text" id="creditcard-lastname" placeholder="Last Name"><br><br>
-      <input type="text" id="creditcard-number" placeholder="Card Number"><br><br>
-      <input type="text" id="creditcard-expdate" placeholder="Expiration Date (MM/YY)"><br><br>
-      <input type="text" id="creditcard-cvv" placeholder="Security Code (CVV)"><br><br>
+      <form id="submit">
+        <input type="text" id="creditcard-firstname" placeholder="First Name" required><br><br>
+        <input type="text" id="creditcard-lastname" placeholder="Last Name" required><br><br>
+        <!-- FROM STACKOVERFLOW -->
+        <input id="creditcard-number" type="tel" inputmode="numeric" 
+          pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="Card Number" required><br><br>
+        <input type="text" id="creditcard-expdate" placeholder="Expiration Date (MM/YY)" pattern="([0-9]{2}[/]?){2}" required><br><br>
+        <input type="text" id="creditcard-cvv" placeholder="Security Code (CVV)" pattern="[0-9]{3,4}" required><br><br>
 
-      <div class="signup-checkbox">
-        <input type="checkbox" id="iagree-checkbox" value="">
-        <label for="iagree-checkbox"> I agree</label>
-      </div>
-      <input type="submit" value="Start Membership" class="red-button"><br><br>
+        <div class="signup-checkbox">
+          <input type="checkbox" id="iagree-checkbox" value="" required>
+          <label for="iagree-checkbox"> I agree</label>
+        </div>
+        <input type="submit" value="Start Membership" class="red-button"><br><br>
+      </form>
     </div>
 </body>
 

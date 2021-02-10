@@ -10,7 +10,8 @@
 </head>
 
 <body>
-  <script src="js/scripts.js"></script>
+  <script src="js/fakeBackend.js"></script>
+  <script src="js/signup2-1.js"></script>
   <header class="header">
     <div>Fakeflix</div>
     <div><a href="signin.html"><input type="submit" value="Sign in" class="red-button"></a></div>
@@ -24,55 +25,55 @@
         <table>
           <tr>
             <th></th>
-            <th><div class="plan-selection-box">Basic</div></th>
-            <th><div class="plan-selection-box">Standard</div></th>
-            <th><div class="plan-selection-box">Premium</div></th>
+            <th><div class="plan-selection-box-u">Basic</div></th>
+            <th><div class="plan-selection-box-u">Standard</div></th>
+            <th><div class="plan-selection-box-u">Premium</div></th>
           </tr>
           <tr>
             <td>Monthly price</td>
-            <td>17.99 TL</td>
-            <td>29.99 TL</td>
-            <td>41.99 TL</td>
+            <td class="basic">17.99 TL</td>
+            <td class="standard">29.99 TL</td>
+            <td class="premium">41.99 TL</td>
           </tr>
           <tr>
             <td>Video quality</td>
-            <td>Good</td>
-            <td>Better</td>
-            <td>Best</td>
+            <td class="basic">Good</td>
+            <td class="standard">Better</td>
+            <td class="premium">Best</td>
           </tr>
           <tr>
             <td>Resolution</td>
-            <td>480p</td>
-            <td>1080p</td>
-            <td>4K+HDR</td>
+            <td class="basic">480p</td>
+            <td class="standard">1080p</td>
+            <td class="premium">4K+HDR</td>
           </tr>
           <tr>
             <td>Screens you can watch on at the same time</td>
-            <td>1</td>
-            <td>2</td>
-            <td>4</td>
+            <td class="basic">1</td>
+            <td class="standard">2</td>
+            <td class="premium">4</td>
           </tr>
           <tr>
             <td>Watch on your TV, computer, mobile phone and tablet</td>
-            <td>✓</td>
-            <td>✓</td>
-            <td>✓</td>
+            <td class="basic">✓</td>
+            <td class="standard">✓</td>
+            <td class="premium">✓</td>
           </tr>
           <tr>
             <td>Unlimited movies and TV shows</td>
-            <td>✓</td>
-            <td>✓</td>
-            <td>✓</td>
+            <td class="basic">✓</td>
+            <td class="standard">✓</td>
+            <td class="premium">✓</td>
           </tr>
           <tr>
             <td>Cancel anytime</td>
-            <td>✓</td>
-            <td>✓</td>
-            <td>✓</td>
+            <td class="basic">✓</td>
+            <td class="standard">✓</td>
+            <td class="premium">✓</td>
           </tr>
         </table>
       </div>
-      <input type="submit" value="Continue" class="red-button"><br><br>
+      <input type="submit" id="continue" value="Continue" class="red-button"><br><br>
     </div>
 </body>
 

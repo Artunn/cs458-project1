@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <script src="js/fakeBackend.js"></script>
     <script src="js/scripts.js"></script>
     <header class="header"><div>Fakeflix</div> <div><a href="signin.html"><input type="submit" value="Sign in" class="red-button"></a></div></header>
     <div class="index-container">
@@ -21,12 +22,27 @@
         <p style="font-size: 16px;padding: 1rem;">
         Ready to watch? Enter your email to create or restart your membership.
         </p>
-        <div class="getstarted-wrapper">
-        <input type="text" id="signupmail" placeholder="Email address"><br><br>
-        <input type="submit" value="Get Started >" class="red-button"><br><br>
-        </div>
+        <form id="emailForm" class="getstarted-wrapper">
+            <input type="email" id="signupmail" placeholder="Email address" required><br><br>
+            <input type="submit" value="Get Started >" class="red-button"><br><br>
+        </form>
     </div>
     </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            let emailForm = document.getElementById("emailForm");
+            emailForm.onsubmit = async (e) => {
+                e.preventDefault();
+                enteredMail = document.getElementById("signupmail").value;
+                
+                startUser();
+                setCurrentUserMail(enteredMail);
+
+                window.location = "signup1-0.html";
+            };
+        })
+    </script>
 </body>
 
 </html>

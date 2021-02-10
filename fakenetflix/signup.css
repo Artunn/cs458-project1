@@ -68,8 +68,13 @@ table{
     margin-bottom: 2rem;
 }
 
-.plan-selection-box{
+.plan-selection-box-u{
     background-color: rgba(255, 0, 0, 0.253);
+    color: white;
+    padding: 2rem;
+}
+.plan-selection-box-s{
+    background-color: #e50914;
     color: white;
     padding: 2rem;
 }
