@@ -18,6 +18,9 @@ body{
     color: red;
     text-shadow: rgba(0, 0, 0, 0.5);
     padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 input{
