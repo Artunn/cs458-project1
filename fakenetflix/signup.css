@@ -36,6 +36,7 @@ input{
     color: black;
     background-color: whitesmoke;
     padding: 1rem;
+    width: 100%;
 }
 
 
@@ -81,4 +82,20 @@ table{
 
 .step-text{
     font-size: 16px;
+}
+
+.password-wrapper{
+    display: flex;
+
+}
+
+.password-wrapper input{
+    border:0;
+    margin-top: 1rem;
+}
+
+
+.password-wrapper button{
+    border:0;
+    margin-top: 1rem;
 }

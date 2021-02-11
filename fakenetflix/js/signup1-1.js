@@ -20,11 +20,11 @@ document.addEventListener('DOMContentLoaded', (event) => {
     };
 
     hideShow.addEventListener('click', () => {
-        if(hideShow.innerText == "SHOW") {
-            hideShow.innerText = "HIDE";
+        if(hideShow.innerText == "show") {
+            hideShow.innerText = "hide";
             password.type = 'text';
         } else {
-            hideShow.innerText = "SHOW";
+            hideShow.innerText = "show";
             password.type = 'password';
         }
     });
