@@ -70,12 +70,12 @@ function setupUser(password) {
 }
 
 function completeUser() {
-    localStorage.setItem('fFlixUS-', getCurrentUserID(), 4);
+    localStorage.setItem('fFlixUS-' + getCurrentUserID(), 4);
 }
 
 function getCurrentStage() {
-    let currentStage = localStorage.getItem('fFlixUS-', getCurrentUserID());
-    if(localStorage.getItem('fFlixUS-', getCurrentUserID())) {
+    let currentStage = localStorage.getItem('fFlixUS-' + getCurrentUserID());
+    if(localStorage.getItem('fFlixUS-' + getCurrentUserID())) {
         return parseInt(currentStage);
     } else {
         return null;
@@ -97,11 +97,29 @@ function getUserCount() {
 }
 
 function setUserPlan(planCount) {
-    localStorage.setItem('fFlixUPlan-', getCurrentUserID(), planCount);
+    if(getCurrentUserID()) {
+        localStorage.setItem('fFlixUPlan-' + getCurrentUserID(), planCount);
+    }
 }
 
 function checkLoggedIn() {
-    if (getCurrentUserID() == null) {
-        window.location = "signup1-1.html";
+    if (getCurrentUserID() == null || getCurrentStage() == 1) {
+        return false;
     }
+    return true;
+}
+
+function getStageURL() {
+    if(getCurrentStage() == 4) {
+        return "signedin.html";
+    } else if(getCurrentStage()) {
+        return "signup" + getCurrentStage() + "-0.html";
+    } else {
+        return "";
+    }
+}
+
+function logout() {
+    localStorage.removeItem('fFlixCU');
+    window.location = 'index.html';
 }

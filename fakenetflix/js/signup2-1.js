@@ -1,8 +1,16 @@
 var selected = 2;
-setUserPlan(2);
+
 
 document.addEventListener('DOMContentLoaded', (event) => {
-    checkLoggedIn();
+    if(checkLoggedIn()) {
+        if(getCurrentStage() == 4) {
+            window.location = getStageURL();
+        }
+    } else {
+        window.location = "index.html";
+    }
+
+    setUserPlan(2);
 
     let basicPlanElements = document.getElementsByClassName('basic');
     let standarPlanElements = document.getElementsByClassName('standard');

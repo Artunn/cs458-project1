@@ -1,5 +1,11 @@
 document.addEventListener('DOMContentLoaded', (event) => {
-    checkLoggedIn();
+    if(checkLoggedIn()) {
+        if(getCurrentStage() != 3) {
+            window.location = getStageURL();
+        }
+    } else {
+        window.location = "index.html";
+    }
 
     let expDateElement = document.getElementById("creditcard-expdate");
     let submitForm = document.getElementById("submit");
@@ -20,9 +26,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     submitForm.onsubmit = async (e) => {
         e.preventDefault();
-        console.log("OFFF YAA")
         completeUser();
-        alert("ALLAH");
         window.location = "signin.html";
     };
 });

@@ -1,4 +1,8 @@
 document.addEventListener('DOMContentLoaded', (event) => {
+    if(checkLoggedIn()) {
+        window.location = getStageURL();
+    }
+
     let hideShow = document.getElementById("hideShow");
     let email = document.getElementById("signup-mail");
     let password = document.getElementById("signup-password");

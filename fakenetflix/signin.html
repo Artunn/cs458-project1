@@ -9,21 +9,22 @@
 </head>
 
 <body>
-  <script src="js/scripts.js"></script>
+  <script src="js/fakeBackend.js"></script>
+  <script src="js/signin.js"></script>
   <header class="header">Fakeflix</header>
   <div class="signin-container">
     <div class="inner-signin-box">
         <p class="signin-text">Sign In</p>
-        <form>
-            <input type="text" id="name" placeholder="Email or phone number"><br><br>
-            <input type="text" id="password" placeholder="Password"><br><br>
+        <form id="submitForm">
+            <input type="text" id="name" placeholder="Email or phone number" required><br><br>
+            <input type="text" id="password" placeholder="Password" required><br><br>
             <input type="submit" value="Sign In" class="red-button"><br><br>
             <div class="signin-checkbox">
             <input type="checkbox" id="rememberme" value="">
             <label for="rememberme"> Remember me</label>
             </div>
             <p>New to fakeflix? <a href="index.html">Sign up now!</a></p>
-          </form>
+        </form>
     </div>      
   </div>
 </body>

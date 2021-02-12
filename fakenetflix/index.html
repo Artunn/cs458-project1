@@ -12,9 +12,9 @@
 
 <body>
     <script src="js/fakeBackend.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="js/index.js"></script>
     <header class="header"><div>Fakeflix</div>
-        <div><input type="submit" value="Sign in" class="red-button" id="sign-button"></div>
+        <div><input type="submit" value="Sign in" class="red-button" id="sign-button" onclick="window.location = 'signin.html'"></div>
     </header>
     <div class="index-container">
         <p style="font-size: 32px; padding: 1rem; margin: 0;">
@@ -30,21 +30,6 @@
         </form>
     </div>
     </div>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', (event) => {
-            let emailForm = document.getElementById("emailForm");
-            emailForm.onsubmit = async (e) => {
-                e.preventDefault();
-                enteredMail = document.getElementById("signupmail").value;
-                
-                startUser();
-                setCurrentUserMail(enteredMail);
-
-                window.location = "signup1-0.html";
-            };
-        })
-    </script>
 </body>
 
 </html>
