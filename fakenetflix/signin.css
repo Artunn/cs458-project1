@@ -1,5 +1,3 @@
-
-
 .signin-container{
     display: flex;
     justify-content: center;
@@ -33,4 +31,48 @@
     word-break: keep-all;
     white-space: nowrap;
     font-size: 12px;
+}
+
+#errorText {
+    background-color: #e87c03;
+    border-radius: 5px;
+}
+
+#errorText > p {
+    font-size: 14px;
+    padding: 16px;
+}
+
+#errorText > p > a {
+    text-decoration: underline;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 1.0);
+}
+
+.password-wrapper{
+    display: flex;
+}
+
+#password {
+    width: 70%;
+}
+
+#hideShow {
+    width: 20%;
+    padding: 0;
+    border: none;
+    background-color: rgba(56, 56, 56, 1.0);
+    color: #8c8c8c;
+    border-radius: 5px;
+}
+
+#helperWrapper {
+    display: flex;
+    gap: 50%;
+}
+
+#helperWrapper > a {
+    text-decoration: none;
+    color: rgba(256, 256, 256, 1.0);
+    font-size: 14px;
 }

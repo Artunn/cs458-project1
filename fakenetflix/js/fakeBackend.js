@@ -5,13 +5,15 @@ function attemptIn(email, password) {
             let currentPassword = localStorage.getItem('fFlixUP-' + idCounter);
             if(currentPassword == password) {
                 localStorage.setItem('fFlixCU', idCounter);
-                return true;
+                return 0;
             } else {
-                return false;
+                // Incorrect password
+                return 1;
             }
         }
     }
-    return false;
+    // User Not Found
+    return 2;
 }
 
 function getCurrentUserID() {
