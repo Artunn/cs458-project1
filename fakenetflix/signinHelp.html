@@ -1,0 +1,37 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Fakeflix</title>
+    <link rel="stylesheet" href="signin.css">
+    <link rel="stylesheet" href="common.css">
+</head>
+
+<body>
+    <!-- <script src="js/fakeBackend.js"></script>
+    <script src="js/signin.js"></script> -->
+    <header class="header">Fakeflix</header>
+    <div class="signin-container">
+        <div class="dark-inner-signin-box">
+            <p class="signin-text">Forgot Email/Password</p>
+            <form id="submitForm">
+                <div id="errorText"></div>
+                <div>
+                    <p>How would you like to reset your password?</p>
+                    <div  style="padding: 0.6rem;"> <label for="emailradio">Email</label><input type="radio" id="emailradio" value="email"></div>
+                    <div style="padding: 0.6rem;"> <label for="smsradio">Text Message (SMS) </label><input type="radio" id="smsradio" value="sms"></div>
+                    </div>
+                    <p>We will send you an email with instructions on how to reset your password.</p>
+                    <input type="email" id="signup-mail" placeholder="Email" required><br><br>
+                    <input type="submit" value="Email Me" class="red-button"><br><br>
+                    <p><a href="signinHelp2.html">I don't remember my email or phone.</a></p>
+                </div>
+                <br><br>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

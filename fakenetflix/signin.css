@@ -76,3 +76,25 @@
     color: rgba(256, 256, 256, 1.0);
     font-size: 14px;
 }
+
+.dark-inner-signin-box{
+    background-color: rgba(243, 243, 243, 0.89);
+    padding: 2rem 3rem 5rem 3rem;
+    border-radius: 30px;
+    color: white;
+    width: 25rem;
+    height: 20rem;
+    color: black;
+}
+
+#emailradio{
+ margin: 0 20px 0 20px;
+ padding: 0;
+ width: 10px;
+}
+
+#smsradio{
+    margin: 0 20px 0 20px;
+    padding: 0;
+    width: 10px;
+   }
